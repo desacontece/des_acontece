@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/fondoMapa-06.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: black;
+    background-attachment: fixed;
+    
+}
+h2{
+    color: beige;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+a{
+    color: ivory;
+
+}
+section div {
+    position: relative;
+    width: 100%;
+    background:transparent;
+    overflow: hidden;
+}
+section div h2{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 5em;
+    line-height: 100vh;
+    animation: animate 120s linear infinite;
+}
+
+section.derecha{
+    position: relative;
+    width: 100;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+section.derecha div {
+    position: relative;
+    width: 100%;
+    background:transparent;
+    overflow: hidden;
+}
+section.derecha div h2{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 5em;
+    line-height: 100vh;
+    animation: animateInverse 120s linear infinite;
+}
+div.boton{
+    padding: 0%;
+    position: relative;
+    left: 100px;
+    display: inline-flex;
+    
+    mix-blend-mode: soft-light;
+
+}
+@keyframes animate{
+    from
+    {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+@keyframes animateInverse{
+    from
+    {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

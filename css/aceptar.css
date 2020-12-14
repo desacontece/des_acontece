@@ -1,0 +1,25 @@
+body{
+    background-image: url(img/fondoMapa-06.png);
+    position: relative;
+    min-height: 90vh;
+    padding: 0
+    
+}
+img{
+    width: 50%;
+    height: auto;
+}
+div.zoom{
+    padding-top: 15vh;
+    text-align: center;
+    vertical-align: middle;
+    width: 100vw;
+    transition: transform .2s; 
+}
+
+.zoom:hover {
+    transform: scale(1.5); 
+  }
+  img.map, map area{
+    outline: none;
+}

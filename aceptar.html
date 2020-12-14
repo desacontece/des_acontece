@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d e s a c o n t e c e</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/aceptar.css">
+</head>
+<body>
+    <div class="zoom">
+        <img class="mapa" src="css/img/mapaLinks.png" alt= "mapaLinks" usemap="#imageMap">
+    <map name="imageMap">
+        <area shape="circle" coords="150,63,20" href="camara_1.html">
+        <area shape="circle" coords="174,900,20" href="camara_2.html">
+        <area shape="circle" coords="669,288,20" href="camara_3.html">
+        <area shape="circle" coords="1563,741,20" href="camara_2.html">
+        <area shape="circle" coords="1452,237,20" href="camara_1.html">
+    </map>
+    </div>
+    
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script src="lib/jquery.rwdImageMaps.min.js"></script>
+    <script>
+    $(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+        
+        $('area').on('click', function() {
+            
+        });
+    });
+    </script>
+</body>
+</html>
