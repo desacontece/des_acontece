@@ -49,7 +49,7 @@ function setup() {
   // Hide the video element, and just show the canvas
   camara_web.hide();
 
-  camara_vigilancia = createVideo("assets/3.mp4", camara_vigilanciaLoad);
+  camara_vigilancia = createVideo("js/assets/3.mp4", camara_vigilanciaLoad);
   camara_vigilancia.size(width, height);
   camara_vigilancia.hide();
 
