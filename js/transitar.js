@@ -1,4 +1,5 @@
-const tilesProvider = "http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png"
+const tilesProvider = "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"
+
 const mymap = L.map('mapid').setView([0,0], 10);
 var latitude = 0
 var longitude =0
