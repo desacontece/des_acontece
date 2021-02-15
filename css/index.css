@@ -1,6 +1,6 @@
 body{
     background-image: url(img/fondoMapa-06.png);
-    position: relative;
+    position: absolute;
     min-height: 90vh;
     padding: 0;
     animation: transitionIn 0.75s;    
@@ -19,6 +19,7 @@ section.grid{
     grid-template-columns: 100;
 }
 h1{
+    position: relative;
     padding-top: 20vh;
     text-align: center;
     color: antiquewhite;
@@ -26,6 +27,7 @@ h1{
     font-size: 7vw;
     mix-blend-mode: difference;
 }
+
 footer{
     position: fixed;
     padding: 0;
@@ -36,6 +38,11 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     font-size: smaller;
 
+}
+
+footer.porfa{
+ text-align: right;
+ padding-right: 10vw;
 }
 div.botonera{
     position: relative;
@@ -55,6 +62,7 @@ img.basesCondiciones{
     padding:10px;
     font-size: 16px;
     font-weight: 300;
+    text-align: right;
     
     color: black;
     background-blend-mode: darken;
@@ -68,6 +76,32 @@ img.basesCondiciones{
   color: rgba(51, 223, 79, 0.897);
   background-color:transparent;
 
+}
+.canvas2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mapid {
+    width: 80vw;
+    height: 80vh;
+    box-shadow: 5px 5px 5px 5px rgb(70, 104, 67);
+    display: block;
+;
+ }
+ .mapid{
+     display: block;
+     height: 90%;
+     width: 90%;
+     background-color: blueviolet;
+     position: absolute;
+     left: 50%;
+     top:50%;
+     transform: translate(-50%,-50%);
+ }
+.container{
+    position: absolute;
+    display:block;
 }
 
 @keyframes transitionIn {
