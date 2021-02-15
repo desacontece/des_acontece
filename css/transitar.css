@@ -1,0 +1,75 @@
+body{
+    background-image: url(img/fondoMapa-06.png);
+    min-height: 90vh;
+    padding: 0
+    
+}
+img{
+    width: 50%;
+    height: auto;
+}
+
+
+.boton{
+    text-decoration: none;
+    padding:10px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right;
+    
+    color: black;
+    background-blend-mode: darken;
+    background-color: white;
+    
+    border-radius: 6px;
+    border: 2px solid
+}
+.boton:hover{
+  opacity: 0.6;
+  color: rgba(51, 223, 79, 0.897);
+  background-color:transparent;
+
+}
+#mapid {
+    width: 80vw;
+    height: 80vh;
+    box-decoration-break: slice;
+    display: block;
+;
+ }
+ .mapid{
+     display: block;
+     height: 90%;
+     width: 90%;
+     background-color: blueviolet;
+     position: absolute;
+     left: 50%;
+     top:50%;
+     transform: translate(-50%,-50%);
+ }
+.container{
+    display: block;
+    grid-row: 2;
+}
+.stack-top{
+    z-index: 1;
+
+
+}
+form{
+    padding-right: 10.4%;
+    bottom: 100vh;
+    text-align: right;
+}
+footer{
+    position: absolute;
+    margin-bottom: 2%;
+    padding-right: 10%;
+    bottom: 0;
+    width: 57%;
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+
+}

@@ -1,0 +1,145 @@
+body{
+    background-image: url(img/fondoMapa-06.png);
+    position: absolute;
+    min-height: 90vh;
+    padding: 0;
+    animation: transitionIn 0.75s;    
+}
+.out{
+    animation: transitionOut 0.75s;
+}
+body.bases{
+    animation: transitionInBases 0.75s;
+}
+
+section.grid{
+    padding: 0;
+    bottom: 20vh;
+    display: grid;
+    grid-template-columns: 100;
+}
+h1{
+    position: relative;
+    padding-top: 20vh;
+    text-align: center;
+    color: antiquewhite;
+    font-family: octane;
+    font-size: 7vw;
+    mix-blend-mode: difference;
+}
+
+footer{
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+
+}
+
+footer.porfa{
+ text-align: right;
+ padding-right: 10vw;
+}
+div.botonera{
+    position: relative;
+    bottom: 7vh;
+    display: grid;
+    grid-template-columns: 63% 11% 11% 11% ;
+}
+img.basesCondiciones{
+    
+    object-fit: cover;
+    width: 97%;
+    height: auto;
+    
+}
+.boton{
+    text-decoration: none;
+    padding:10px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right;
+    
+    color: black;
+    background-blend-mode: darken;
+    background-color: white;
+    
+    border-radius: 6px;
+    border: 2px solid
+}
+.boton:hover{
+  opacity: 0.6;
+  color: rgba(51, 223, 79, 0.897);
+  background-color:transparent;
+
+}
+.canvas2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mapid {
+    width: 80vw;
+    height: 80vh;
+    box-shadow: 5px 5px 5px 5px rgb(70, 104, 67);
+    display: block;
+;
+ }
+ .mapid{
+     display: block;
+     height: 90%;
+     width: 90%;
+     background-color: blueviolet;
+     position: absolute;
+     left: 50%;
+     top:50%;
+     transform: translate(-50%,-50%);
+ }
+.container{
+    position: absolute;
+    display:block;
+}
+
+@keyframes transitionIn {
+    from {
+        mix-blend-mode: difference;
+        opacity: 0;
+       
+    }
+    
+    to{
+        mix-blend-mode: difference;
+        opacity: 1;
+    }
+}
+@keyframes transitionInBases {
+    from {
+        mix-blend-mode: difference;
+        opacity: 0;
+       
+    }
+    
+    to{
+
+        opacity: 1;
+    }
+}
+@keyframes transtionOut {
+    from {
+        mix-blend-mode: difference;
+        opacity: 1;  
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@font-face {
+    font-family: Octane;
+    src: url(fonts/Octane-Extended.woff);
+  }
+  

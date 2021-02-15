@@ -1,0 +1,16 @@
+#texto{
+    position: absolute;
+    left: 38%;
+}
+h6{
+    font-family: monospace;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(95, 187, 118);
+}
+
+#canvascontainer{
+    color: azure;
+    width: 98vw;
+    height: 98vh;
+}
